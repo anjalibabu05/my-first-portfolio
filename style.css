@@ -1,0 +1,532 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 150vh;
+    margin: 0;
+
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, cyan, black);
+    top: 0;
+    z-index: 10;
+
+}
+
+.img {
+    width: 100px;
+
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid rgba(25, 197, 160, 0.665);
+
+}
+
+.logo {
+    padding-left: 10px;
+
+}
+
+.nav-items {
+    padding-top: 40px;
+    align-items: center;
+    font-family: "Share Tech", sans-serif;
+}
+
+.nav-items .items {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+.nav-items:hover a:hover {
+    color: black;
+}
+
+#background {
+    background: url('./images/photo-1498050108023-c5249f4df085.jpeg')no-repeat center center;
+    background-size: cover;
+
+
+
+}
+
+#background,
+.outlier {
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+
+}
+
+.outlier {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    align-items: center;
+    width: 300px;
+    height: 330px;
+    background: #1e1e1e;
+    border-radius: 20px;
+
+
+}
+
+.profile-card:hover {
+    transform: translateY(20px)scale(1.02);
+    transition: transform 0.6s ease-in-out;
+}
+
+.profile-img {
+    text-align: center;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    order: 3px soilid red;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+
+
+}
+
+.image-div {
+
+
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(31, 233, 216, 0.788);
+
+}
+
+p,
+h2 {
+    text-align: center;
+    color: white;
+    padding: 2px;
+    font-family: "Share Tech", sans-serif;
+}
+
+#image-card {
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    margin-left: 6.5px;
+    text-align: center;
+
+}
+
+.profile-card:hover .profile-img {
+    transform: rotateY(180deg);
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.social-icons {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+
+}
+
+.icon-list:hover .social-icons:hover {
+    background-image: linear-gradient(cyan, black);
+}
+
+.brands {
+    color: white;
+    font-size: 22px;
+}
+
+.icon-list:hover .brands:hover {
+    color: black;
+}
+
+#about-section {
+    margin-top: 150px;
+    width: 100%;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 0;
+    padding: 30px;
+}
+
+.sub-about {
+    width: 90%;
+    height: 95%;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px cyan;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+.subhead {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Share Tech", sans-serif;
+}
+
+.pseudo::after {
+    content: '';
+    display: block;
+    width: 8%;
+    box-shadow: 0 0 10px #00fa50;
+    height: 4px;
+    background-color: cyan;
+    margin: 8px auto 0;
+    border-radius: 5px;
+
+}
+
+.underline {
+    display: block;
+    width: 5%;
+    box-shadow: 0 0 10px #00fa50;
+    height: 4px;
+    background-color: cyan;
+    margin: 8px auto 0;
+    border-radius: 5px;
+
+}
+
+.main-icon {
+    font-size: 40px;
+    color: blue;
+    padding-bottom: 15px;
+}
+
+.pseudo {
+    font-family: "Share Tech", sans-serif;
+    font-size: 35px;
+
+}
+
+.sentance {
+
+    text-align: start;
+    padding: 30px 30px;
+}
+
+#highlight {
+    color: cyan;
+    font-size: 20px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid {
+    font-family: "Share Tech", sans-serif;
+
+    background: rgba(73, 67, 67, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: white
+}
+
+.download {
+
+    background: rgba(43, 40, 40, 0.9);
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-left: 68%;
+    border: 2px solid white;
+
+}
+
+
+.right-box {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+
+}
+
+.logo-intrest {
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    color: white;
+    box-shadow: 0 0 10px cyan;
+}
+
+.my-intrests:hover .logo-intrest:hover {
+    background-image: linear-gradient(cyan);
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: "Share Tech", sans-serif;
+    font-size: 20px;
+}
+
+.personal-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Stack each detail vertically */
+    gap: 10px;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.key {
+    padding-right: 20px;
+    align-items: center;
+}
+
+.freelance {
+    background-color: cyan;
+    color: black;
+    border-radius: 4px;
+    padding: 2px;
+    font-weight: bold
+}
+
+#skills {
+
+    margin-top: 850px;
+    width: 100%;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.9);
+    margin-top: 0;
+    padding: 30px;
+}
+
+.skill-subhead {
+    width: 90%;
+    height: 95%;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px cyan;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+#skill-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid2 {
+    font-family: "Share Tech", sans-serif;
+
+    background: rgba(73, 67, 67, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: white
+}
+
+.each-skill {
+    display: grid;
+    padding: 20px;
+
+
+
+}
+
+.basebar,
+.inner-bar {
+    width: 50%;
+    height: 8px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.basebar {
+    width: 100%;
+}
+
+.inner-bar {
+    position: relative;
+}
+
+.value1 {
+    text-align: left;
+}
+
+.javabar {
+    width: 94%;
+    background: cyan;
+}
+
+.hsbar {
+    width: 95%;
+    background: cyan;
+}
+
+.reactbar {
+    width: 85%;
+    background: cyan;
+}
+
+.combar {
+    width: 98%;
+    background: cyan;
+}
+
+.teambar {
+    width: 90%;
+    background: cyan;
+}
+
+.createbar {
+    width: 85%;
+    background: cyan;
+}
+
+.circle {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    text-align: center;
+    background-color: cyan;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px cyan;
+}
+
+#project {
+    margin-top: 150px;
+    width: 100%;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 0;
+    padding: 30px;
+}
+
+.sub-pro {
+    width: 90%;
+    height: 100%;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px cyan;
+    margin: auto;
+
+}
+
+.grid3 {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+
+.pro1 {
+    width: 500px;
+    height: 300px;
+
+
+}
+
+.img-prpo {
+   width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.para2{
+font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+.section1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 245, 160, 0.2);
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+.para2 #highlight {
+  color: #00f5a0;
+    font-weight: bold;
+}
+.sec2{
+    margin-bottom: 30px;
+}
+footer{
+     margin-top: 1000px;
+    width: 100%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 0;
+    padding: 30px;
+
+}
+#copyright{
+
+  text-align: center;
+  color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    padding-top: 90px;
+}
+.last{
+float: right;
+    
+}
