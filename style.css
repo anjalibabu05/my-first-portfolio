@@ -11,6 +11,7 @@
 
 }
 
+
 .nav-bar {
     position: fixed;
     width: 100%;
@@ -21,7 +22,6 @@
     background-image: linear-gradient(to bottom right, cyan, black);
     top: 0;
     z-index: 10;
-
 }
 
 .img {
@@ -56,6 +56,35 @@
 .nav-items:hover a:hover {
     color: black;
 }
+#check {
+  display: none;
+}
+
+/* Hamburger menu button */
+.checkbtn {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}
+
+.open-icon,
+.close-icon {
+  display: none;
+}
+
+/* Show/hide icons */
+#check:checked ~ .checkbtn .open-icon {
+  display: none;
+}
+#check:checked ~ .checkbtn .close-icon {
+  display: inline;
+}
+
+
 
 #background {
     background: url('./images/photo-1498050108023-c5249f4df085.jpeg')no-repeat center center;
@@ -250,13 +279,15 @@ h2 {
 .boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
     gap: 20px;
     padding: 20px;
+
 }
 
 .grid {
     font-family: "Share Tech", sans-serif;
-
+    margin-top: -30px;
     background: rgba(73, 67, 67, 0.5);
     border-radius: 20px;
     padding: 30px;
@@ -270,9 +301,10 @@ h2 {
     width: 500px;
     height: 50px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
     border-radius: 10px;
-    margin-left: 68%;
+
+    margin: 0 70%;
     border: 2px solid white;
 
 }
@@ -313,7 +345,7 @@ h2 {
     gap: 10px;
     padding: 20px;
 
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .details {
@@ -481,15 +513,16 @@ h2 {
 }
 
 .img-prpo {
-   width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-.para2{
-font-size: 1rem;
-  line-height: 1.6;
-  padding: 0 10px;
+
+.para2 {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
 }
 
 .section1 {
@@ -502,15 +535,18 @@ font-size: 1rem;
     max-width: 500px;
     margin-bottom: 20px;
 }
+
 .para2 #highlight {
-  color: #00f5a0;
+    color: #00f5a0;
     font-weight: bold;
 }
-.sec2{
+
+.sec2 {
     margin-bottom: 30px;
 }
-footer{
-     margin-top: 1000px;
+
+footer {
+    margin-top: 1000px;
     width: 100%;
     height: 200px;
     background: rgba(0, 0, 0, 0.8);
@@ -518,57 +554,118 @@ footer{
     padding: 30px;
 
 }
-#copyright{
 
-  text-align: center;
-  color: white;
+#copyright {
+
+    text-align: center;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
     padding-top: 90px;
 }
-.last{
-float: right;
-    
+
+.last {
+    float: right;
 }
-@media screen and (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+
+@media (max-width:1101px) {
+
+    .wrapper{
+    width:auto;
+}
+
+    .checkbtn {
+    display: block;
   }
 
   .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  #check:checked ~ .nav-items {
     display: flex;
-    flex-direction: column;
-    padding: 0;
   }
 
-  .boxes,
-  #skill-set,
-  .right-box {
-    grid-template-columns: 1fr;
+  .nav-items .items {
+    font-size: 22px;
+    padding: 15px;
   }
+#background{
+    width:auto;
+}
 
-  .grid3 {
-    flex-direction: column;
-  }
+    .boxes,
+    #skill-set
 
-  .pro1 {
-    width: 90%;
-    margin-bottom: 20px;
-  }
+    {
 
-  .download {
-    width: 90%;
-    margin: 20px auto;
-  }
+        grid-template-columns: auto;
+        row-gap: 50px;
 
-  .personal-details {
-    grid-template-columns: 1fr;
-  }
+    }
 
-  footer {
-    padding: 10px;
-    height: auto;
-  }
+    .sub-about,
+    .skill-subhead,
+    #project {
+        height: auto;
+    }
+
+    #about-section,
+    #skills,.pro1,.sub-pro
+     {
+        height: auto;
+    }
+
+    .download {
+        margin-left: 0px;
+    }
+    .grid3{
+        flex-wrap: wrap;
+        padding: 20px;
+        height: auto;
+    }
+    .section1{
+        width: auto;
+    }
+
+}
+
+@media(max-width:600px) {
+    
+    .nav-items{
+        display: none;
+
+    }
+
+    .boxes {
+        width: auto;
+    }
+
+    .boxes .grid {
+        width: auto;
+
+    }
+
+    .grid {
+        font-size: 10px;
+    }
+
+    .download .link {
+        font-size: 10px;
+    }
+
+    #about-section .sub-about .sentance {
+        font-size: 10px;
+        line-height: 15px;
+
+    }
+
 }
