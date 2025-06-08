@@ -530,3 +530,45 @@ footer{
 float: right;
     
 }
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .boxes,
+  #skill-set,
+  .right-box {
+    grid-template-columns: 1fr;
+  }
+
+  .grid3 {
+    flex-direction: column;
+  }
+
+  .pro1 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .download {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .personal-details {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 10px;
+    height: auto;
+  }
+}
